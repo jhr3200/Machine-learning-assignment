@@ -1,400 +1,1109 @@
-<html>
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=Generator content="Microsoft Word 14 (filtered)">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="Machine_learning_assignment_V3_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>james rochford</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>james rochford</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2016-01-30T14:21:00Z</o:Created>
+  <o:LastSaved>2016-01-30T14:21:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>1718</o:Words>
+  <o:Characters>9793</o:Characters>
+  <o:Lines>81</o:Lines>
+  <o:Paragraphs>22</o:Paragraphs>
+  <o:CharactersWithSpaces>11489</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Machine_learning_assignment_V3_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Machine_learning_assignment_V3_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>18 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>18 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef m:val="off"/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapRight/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="subSup"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="99" Name="No List"/>
+ </w:LatentStyles>
+</xml><![endif]-->
 <style>
 <!--
  /* Font Definitions */
  @font-face
 	{font-family:Cambria;
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073743103 0 0 415 0;}
 @font-face
 	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;}
-@font-face
-	{font-family:Tahoma;
-	panose-1:2 11 6 4 3 5 4 4 2 4;}
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
 @font-face
 	{font-family:Consolas;
-	panose-1:2 11 6 9 2 2 4 3 2 4;}
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-520092929 1073806591 9 0 415 0;}
  /* Style Definitions */
  p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin-top:9.0pt;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 h1
-	{margin-top:24.0pt;
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
+	mso-outline-level:1;
 	font-size:16.0pt;
 	font-family:"Calibri","sans-serif";
-	color:#345A8A;}
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
+	mso-font-kerning:0pt;}
 h2
-	{margin-top:10.0pt;
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
+	mso-outline-level:2;
 	font-size:16.0pt;
 	font-family:"Calibri","sans-serif";
-	color:#4F81BD;}
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
 h3
-	{margin-top:10.0pt;
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
+	mso-outline-level:3;
 	font-size:14.0pt;
 	font-family:"Calibri","sans-serif";
-	color:#4F81BD;}
-h4
-	{margin-top:10.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Calibri","sans-serif";
-	color:#4F81BD;}
-h5
-	{margin-top:10.0pt;
-	margin-right:0in;
-	margin-bottom:0in;
-	margin-left:0in;
-	margin-bottom:.0001pt;
-	page-break-after:avoid;
-	font-size:12.0pt;
-	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
 	color:#4F81BD;
+	mso-themecolor:accent1;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;}
+h5
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:12.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
 	font-weight:normal;
 	font-style:italic;}
 p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
-	{margin-top:9.0pt;
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.MsoTitle, li.MsoTitle, div.MsoTitle
-	{margin-top:24.0pt;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:24.0pt;
 	margin-right:0in;
 	margin-bottom:12.0pt;
 	margin-left:0in;
 	text-align:center;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:18.0pt;
 	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
 	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
 	font-weight:bold;}
 p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
-	{margin-top:9.0pt;
+	{mso-style-unhide:no;
+	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:6.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
-	{margin-top:12.0pt;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:Title;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
 	margin-right:0in;
 	margin-bottom:12.0pt;
 	margin-left:0in;
 	text-align:center;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:15.0pt;
 	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
 	color:#345A8A;
+	mso-themecolor:accent1;
+	mso-themeshade:181;
 	font-weight:bold;}
 p.MsoDate, li.MsoDate, div.MsoDate
-	{margin-top:0in;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:Normal;
+	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:10.0pt;
 	margin-left:0in;
 	text-align:center;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
-p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
-	{mso-style-link:"Balloon Text Char";
-	margin:0in;
-	margin-bottom:.0001pt;
-	font-size:8.0pt;
-	font-family:"Tahoma","sans-serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.MsoBibliography, li.MsoBibliography, div.MsoBibliography
-	{margin-top:9.0pt;
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.Compact, li.Compact, div.Compact
 	{mso-style-name:Compact;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
 	margin-top:1.8pt;
 	margin-right:0in;
 	margin-bottom:1.8pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.Author, li.Author, div.Author
 	{mso-style-name:Author;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-style-next:Normal;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:10.0pt;
 	margin-left:0in;
 	text-align:center;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.Abstract, li.Abstract, div.Abstract
 	{mso-style-name:Abstract;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
 	margin-top:15.0pt;
 	margin-right:0in;
 	margin-bottom:15.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:10.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.BlockQuote, li.BlockQuote, div.BlockQuote
 	{mso-style-name:"Block Quote";
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
 	margin-top:5.0pt;
 	margin-right:0in;
 	margin-bottom:5.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:10.0pt;
-	font-family:"Calibri","sans-serif";}
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	mso-bidi-font-weight:bold;}
 p.DefinitionTerm, li.DefinitionTerm, div.DefinitionTerm
 	{mso-style-name:"Definition Term";
+	mso-style-unhide:no;
+	mso-style-next:Definition;
 	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:0in;
 	margin-left:0in;
 	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan lines-together;
 	page-break-after:avoid;
 	font-size:12.0pt;
 	font-family:"Cambria","serif";
-	font-weight:bold;}
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 p.Definition, li.Definition, div.Definition
 	{mso-style-name:Definition;
+	mso-style-unhide:no;
 	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 p.TableCaption, li.TableCaption, div.TableCaption
 	{mso-style-name:"Table Caption";
+	mso-style-unhide:no;
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:6.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
 	font-family:"Cambria","serif";
-	font-style:italic;}
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
 p.ImageCaption, li.ImageCaption, div.ImageCaption
 	{mso-style-name:"Image Caption";
+	mso-style-unhide:no;
 	mso-style-link:"Body Text Char";
 	margin-top:0in;
 	margin-right:0in;
 	margin-bottom:6.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	font-size:12.0pt;
 	font-family:"Cambria","serif";
-	font-style:italic;}
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
 span.BodyTextChar
 	{mso-style-name:"Body Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
 	mso-style-link:"Image Caption";}
 span.VerbatimChar
 	{mso-style-name:"Verbatim Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Body Text Char";
 	mso-style-link:"Source Code";
-	font-family:Consolas;}
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
 span.FootnoteRef
 	{mso-style-name:"Footnote Ref";
+	mso-style-unhide:no;
+	mso-style-parent:"Body Text Char";
 	vertical-align:super;}
 span.Link
 	{mso-style-name:Link;
-	color:#4F81BD;}
+	mso-style-unhide:no;
+	mso-style-parent:"Body Text Char";
+	color:#4F81BD;
+	mso-themecolor:accent1;}
 p.SourceCode, li.SourceCode, div.SourceCode
 	{mso-style-name:"Source Code";
+	mso-style-unhide:no;
 	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	word-break:break-all;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 span.KeywordTok
 	{mso-style-name:KeywordTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#007020;
-	font-weight:bold;}
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 span.DataTypeTok
 	{mso-style-name:DataTypeTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#902000;}
 span.DecValTok
 	{mso-style-name:DecValTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#40A070;}
 span.BaseNTok
 	{mso-style-name:BaseNTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#40A070;}
 span.FloatTok
 	{mso-style-name:FloatTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#40A070;}
 span.CharTok
 	{mso-style-name:CharTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#4070A0;}
 span.StringTok
 	{mso-style-name:StringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#4070A0;}
 span.CommentTok
 	{mso-style-name:CommentTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#60A0B0;
-	font-style:italic;}
+	font-style:italic;
+	mso-bidi-font-style:normal;}
 span.OtherTok
 	{mso-style-name:OtherTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#007020;}
 span.AlertTok
 	{mso-style-name:AlertTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:red;
-	font-weight:bold;}
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 span.FunctionTok
 	{mso-style-name:FunctionTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#06287E;}
 span.RegionMarkerTok
 	{mso-style-name:RegionMarkerTok;
-	font-family:Consolas;}
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
 span.ErrorTok
 	{mso-style-name:ErrorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:red;
-	font-weight:bold;}
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 span.NormalTok
 	{mso-style-name:NormalTok;
-	font-family:Consolas;}
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;}
 p.SourceCode0, li.SourceCode0, div.SourceCode0
 	{mso-style-name:"Source Code";
+	mso-style-unhide:no;
 	mso-style-link:"Verbatim Char";
 	margin-top:9.0pt;
 	margin-right:0in;
 	margin-bottom:9.0pt;
 	margin-left:0in;
+	mso-pagination:widow-orphan;
 	background:#F8F8F8;
 	word-break:break-all;
 	font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 span.KeywordTok0
 	{mso-style-name:KeywordTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#204A87;
 	background:#F8F8F8;
-	font-weight:bold;}
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 span.DataTypeTok0
 	{mso-style-name:DataTypeTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#204A87;
 	background:#F8F8F8;}
 span.DecValTok0
 	{mso-style-name:DecValTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#0000CF;
 	background:#F8F8F8;}
 span.BaseNTok0
 	{mso-style-name:BaseNTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#0000CF;
 	background:#F8F8F8;}
 span.FloatTok0
 	{mso-style-name:FloatTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#0000CF;
 	background:#F8F8F8;}
 span.CharTok0
 	{mso-style-name:CharTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#4E9A06;
 	background:#F8F8F8;}
 span.StringTok0
 	{mso-style-name:StringTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#4E9A06;
 	background:#F8F8F8;}
 span.CommentTok0
 	{mso-style-name:CommentTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#8F5902;
 	background:#F8F8F8;
-	font-style:italic;}
+	font-style:italic;
+	mso-bidi-font-style:normal;}
 span.OtherTok0
 	{mso-style-name:OtherTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#8F5902;
 	background:#F8F8F8;}
 span.AlertTok0
 	{mso-style-name:AlertTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:#EF2929;
 	background:#F8F8F8;}
 span.FunctionTok0
 	{mso-style-name:FunctionTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	color:black;
 	background:#F8F8F8;}
 span.RegionMarkerTok0
 	{mso-style-name:RegionMarkerTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	background:#F8F8F8;}
 span.ErrorTok0
 	{mso-style-name:ErrorTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	background:#F8F8F8;
-	font-weight:bold;}
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
 span.NormalTok0
 	{mso-style-name:NormalTok;
+	mso-style-unhide:no;
+	mso-style-parent:"Verbatim Char";
+	mso-ansi-font-size:11.0pt;
 	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
 	background:#F8F8F8;}
-span.BalloonTextChar
-	{mso-style-name:"Balloon Text Char";
-	mso-style-link:"Balloon Text";
-	font-family:"Tahoma","sans-serif";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
 .MsoChpDefault
-	{font-size:12.0pt;
-	font-family:"Cambria","serif";}
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:12.0pt;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Cambria;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
 .MsoPapDefault
-	{margin-bottom:10.0pt;}
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;}
 @page WordSection1
 	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;}
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
 div.WordSection1
 	{page:WordSection1;}
  /* List Definitions */
- ol
+ @list l0
+	{mso-list-id:-511743558;
+	mso-list-template-ids:-2082821950;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l0:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:96.0pt;
+	text-indent:-24.0pt;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-24.0pt;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-24.0pt;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:204.0pt;
+	text-indent:-24.0pt;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:240.0pt;
+	text-indent:-24.0pt;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:1855842555;
+	mso-list-template-ids:-1846920546;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:0in;
+	mso-level-number-position:left;
+	margin-left:24.0pt;
+	text-indent:-24.0pt;}
+@list l1:level2
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	margin-left:60.0pt;
+	text-indent:-24.0pt;}
+@list l1:level3
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	margin-left:96.0pt;
+	text-indent:-24.0pt;}
+@list l1:level4
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	margin-left:132.0pt;
+	text-indent:-24.0pt;}
+@list l1:level5
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:168.0pt;
+	text-indent:-24.0pt;}
+@list l1:level6
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:204.0pt;
+	text-indent:-24.0pt;}
+@list l1:level7
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:" ";
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	margin-left:240.0pt;
+	text-indent:-24.0pt;}
+@list l1:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
 	{margin-bottom:0in;}
 ul
 	{margin-bottom:0in;}
 -->
 </style>
-
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=EN-US>
+<body lang=EN-US style='tab-interval:.5in'>
 
 <div class=WordSection1>
 
@@ -416,8 +1125,8 @@ of fedilitey to the ideal case as recorded in the classe variable;
 the worst. The corresponding acellerometer data during the test was recorded
 and stored in a number of additional potential predictor variables, more
 information can be found here <a href="http://groupware.les.inf.puc-rio.br/har"><span
-class=Link><span style='text-decoration:none'>Data set details</span></span></a><span
-class=Link>.</span></p>
+class=Link><span style='text-decoration:none;text-underline:none'>Data set
+details</span></span></a></p>
 
 <p class=MsoNormal>The data is used to develop a machine learning alogrithm
 using techniques learned in the course that is capable of distingushing the
@@ -425,99 +1134,229 @@ classe of an exercize given the same predictors variables as defined in the
 training data set.The model is then used to to predict 20 different test cases.
 the training data can be found here (<a
 href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"><span
-class=Link><span style='text-decoration:none'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</span></span></a>)
+class=Link><span style='text-decoration:none;text-underline:none'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</span></span></a>)
 and the test data here (<a
 href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv"><span
-class=Link><span style='text-decoration:none'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</span></span></a>)</p>
+class=Link><span style='text-decoration:none;text-underline:none'>https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</span></span></a>)</p>
 
 <h3><a name=read-data-set></a>read data set</h3>
 
-<p class=SourceCode0><span class=NormalTok0><span style='font-size:11.0pt'>rawtrainingset
-&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>read.csv</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>'pml-training.csv'</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>rawtestingset &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>read.csv</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>'pml-testing.csv'</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span></p>
+<p class=SourceCode0><span class=NormalTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>rawtrainingset &lt;-</span></span><span class=StringTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'> </span></span><span class=KeywordTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>read.csv</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(</span></span><span class=StringTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>'pml-training.csv'</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>rawtestingset
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>read.csv</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(</span></span><span class=StringTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>'pml-testing.csv'</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span></p>
 
 <h3><a name=preprocessing></a>Preprocessing</h3>
 
 <p class=MsoNormal>Upon examination there are 159 variables in the dataset (see
 below). However many of these columns lack significant data or contain
-factordata that is notrelated to the sensor data. In particular columns 1:7 (<span
-style='background:aqua'>highlight</span>) contain factor data.</p>
+factordata that is notrelated to the sensor data. In particular columns 1:7
+(below) contain factor data not related to the acelleromeners, It is decided to
+exclude this for this first analyses whist it may effect the quality of the
+data, for example the &quot;user&quot; factor identifying the participant who
+carries out the exercize, one would expect each user to have a unique way of
+exercizing and this can contaminate signals from the acellerometers However it
+is reasonable to assumed this is a secondary effect since all the exercizes
+werecarried outunderthe supervision os a weight training expert.</p>
 
-<p class=SourceCode0><span class=NormalTok0><span style='font-size:10.0pt'>trainingdata
-&lt;-</span></span><span class=StringTok0><span style='font-size:10.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:10.0pt'>preprocesssdat</span></span><span
-class=NormalTok0><span style='font-size:10.0pt'>(rawtrainingset)</span></span></p>
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>## [1] &quot;X&quot;<span
+style='mso-spacerun:yes'>                    </span>&quot;user_name&quot;<span
+style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'>          </span>&quot;raw_timestamp_part_1&quot;</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [4]
+&quot;raw_timestamp_part_2&quot; &quot;cvtd_timestamp&quot;<span
+style='mso-spacerun:yes'>       </span>&quot;new_window&quot;<span
+style='mso-spacerun:yes'>          </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [7]
+&quot;num_window&quot;</span></span></p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>##  
-[1] <span style='background:aqua'>&quot;X&quot;</span>                        <span
-style='background:aqua'>&quot;user_name&quot;</span>               </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##   [3] <span
-style='background:aqua'>&quot;raw_timestamp_part_1&quot;</span>     <span
-style='background:aqua'>&quot;raw_timestamp_part_2&quot;</span>    </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##   [5] <span
-style='background:aqua'>&quot;cvtd_timestamp&quot;</span>           <span
-style='background:aqua'>&quot;new_window&quot;</span>              </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##   [7] <span
-style='background:aqua'>&quot;num_window&quot;</span>              
-&quot;roll_belt&quot;               </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##   [9]
-&quot;pitch_belt&quot;  </span></span></p>
+<p class=MsoNormal>The preprocessing of the data was carried out using the <b
+style='mso-bidi-font-weight:normal'>preprocessing()</b> script For brevity it
+is not displayed here but can be found in this directory. To summarise the
+source function it removes the 1st 7 columns (non acellerometer data) and loops
+through all the other acellerometer columns to see if they contains more that
+70% numeric content if the column has less numeric content than this it is
+discarded.</p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>##...............Numeric
-accelerometer data columns.........</span></span></p>
+<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>#===Load script to preprocess raw data</span></span><br>
+<span class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>source</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;preprocessdat.R&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span><br>
+<br>
+<span class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#process
+training set</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>trainingdata
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>preprocesssdat</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(rawtrainingset)</span></span></p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>##
-[159] &quot;magnet_forearm_z&quot;         &quot;classe&quot;                  </span></span></p>
+<p class=SourceCode0><span class=GramE><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>names</span></span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&lt;-</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>c</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(</span></span><span
+class=SpellE><span class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>colnames</span></span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(<span
+class=SpellE>trainingdata</span>))</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>names&lt;-names[-</span></span><span
+class=DecValTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>1</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>]</span></span><span
+class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'># remove
+<span class=SpellE>classe</span> from list</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>names</span></span></p>
 
-<p class=MsoNormal>It is decided to exclude this for this first analyses whist
-it may effect the quality of the data, for example the &quot;user&quot; factor
-identifying the participant who carries out the exercize, one would expect each
-user to have a unique way of exercizing and this can contaminate signals from
-the acellerometers However it is reasonable to assumed this is a secondary
-effect since all the exercizes werecarried outunderthe supervision os a weight
-training expert.</p>
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>##<span style='mso-spacerun:yes'>  </span>[1]
+&quot;roll_belt&quot;<span style='mso-spacerun:yes'>           
+</span>&quot;pitch_belt&quot;<span style='mso-spacerun:yes'>          
+</span>&quot;yaw_belt&quot;<span style='mso-spacerun:yes'>            </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>  </span>[4] &quot;total_accel_belt&quot;<span
+style='mso-spacerun:yes'>     </span>&quot;gyros_belt_x&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;gyros_belt_y&quot;<span
+style='mso-spacerun:yes'>        </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>  </span>[7] &quot;gyros_belt_z&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;accel_belt_x&quot;<span
+style='mso-spacerun:yes'>         </span>&quot;accel_belt_y&quot;<span
+style='mso-spacerun:yes'>        </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [10]
+&quot;accel_belt_z&quot;<span style='mso-spacerun:yes'>        
+</span>&quot;magnet_belt_x&quot;<span style='mso-spacerun:yes'>       
+</span>&quot;magnet_belt_y&quot;<span style='mso-spacerun:yes'>       </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [13]
+&quot;magnet_belt_z&quot;<span style='mso-spacerun:yes'>       
+</span>&quot;roll_arm&quot;<span style='mso-spacerun:yes'>            
+</span>&quot;pitch_arm&quot;<span style='mso-spacerun:yes'>           </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [16]
+&quot;yaw_arm&quot;<span style='mso-spacerun:yes'>              </span>&quot;total_accel_arm&quot;<span
+style='mso-spacerun:yes'>      </span>&quot;gyros_arm_x&quot;<span
+style='mso-spacerun:yes'>         </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [19]
+&quot;gyros_arm_y&quot;<span style='mso-spacerun:yes'>         
+</span>&quot;gyros_arm_z&quot;<span style='mso-spacerun:yes'>         
+</span>&quot;accel_arm_x&quot;<span style='mso-spacerun:yes'>         </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [22]
+&quot;accel_arm_y&quot;<span style='mso-spacerun:yes'>         
+</span>&quot;accel_arm_z&quot;<span style='mso-spacerun:yes'>         
+</span>&quot;magnet_arm_x&quot;<span style='mso-spacerun:yes'>        </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [25]
+&quot;magnet_arm_y&quot;<span style='mso-spacerun:yes'>        
+</span>&quot;magnet_arm_z&quot;<span style='mso-spacerun:yes'>        
+</span>&quot;roll_dumbbell&quot;<span style='mso-spacerun:yes'>       </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [28]
+&quot;pitch_dumbbell&quot;<span style='mso-spacerun:yes'>      
+</span>&quot;yaw_dumbbell&quot;<span style='mso-spacerun:yes'>        
+</span>&quot;total_accel_dumbbell&quot;</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [31]
+&quot;gyros_dumbbell_x&quot;<span style='mso-spacerun:yes'>    
+</span>&quot;gyros_dumbbell_y&quot;<span style='mso-spacerun:yes'>    
+</span>&quot;gyros_dumbbell_z&quot;<span style='mso-spacerun:yes'>    </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [34]
+&quot;accel_dumbbell_x&quot;<span style='mso-spacerun:yes'>    
+</span>&quot;accel_dumbbell_y&quot;<span style='mso-spacerun:yes'>    
+</span>&quot;accel_dumbbell_z&quot;<span style='mso-spacerun:yes'>    </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [37]
+&quot;magnet_dumbbell_x&quot;<span style='mso-spacerun:yes'>   
+</span>&quot;magnet_dumbbell_y&quot;<span style='mso-spacerun:yes'>   
+</span>&quot;magnet_dumbbell_z&quot;<span style='mso-spacerun:yes'>   </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [40]
+&quot;roll_forearm&quot;<span style='mso-spacerun:yes'>        
+</span>&quot;pitch_forearm&quot;<span style='mso-spacerun:yes'>       
+</span>&quot;yaw_forearm&quot;<span style='mso-spacerun:yes'>         </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [43]
+&quot;total_accel_forearm&quot;<span style='mso-spacerun:yes'> 
+</span>&quot;gyros_forearm_x&quot;<span style='mso-spacerun:yes'>     
+</span>&quot;gyros_forearm_y&quot;<span style='mso-spacerun:yes'>     </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [46]
+&quot;gyros_forearm_z&quot;<span style='mso-spacerun:yes'>      </span>&quot;accel_forearm_x&quot;<span
+style='mso-spacerun:yes'>      </span>&quot;accel_forearm_y&quot;<span
+style='mso-spacerun:yes'>     </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [49]
+&quot;accel_forearm_z&quot;<span style='mso-spacerun:yes'>     
+</span>&quot;magnet_forearm_x&quot;<span style='mso-spacerun:yes'>    
+</span>&quot;magnet_forearm_y&quot;<span style='mso-spacerun:yes'>    </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [52]
+&quot;magnet_forearm_z&quot;</span></span></p>
 
-<p class=MsoNormal>The preprocessing of the data was carried out using the <b>preprocessing()</b>
-script For brevity it is not diaplayed here but can be in this directory. To
-summarise the source function it removes the 1st 7 columns (non acellerometer
-data) and loops through all the other acellerometer columns to see if they
-contains more that 70% numeric content if the column has less numeric content
-than this it is discarded.</p>
-
-<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt'>#Load
-script to preprocess raw data</span></span><br>
-<span class=KeywordTok0><span style='font-size:11.0pt'>source</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;preprocessdat.R&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'>#process training set</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>names&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>c</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>colnames</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(trainingdata))</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>names&lt;-names[-</span></span><span
-class=DecValTok0><span style='font-size:11.0pt'>1</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>]</span></span><span
-class=CommentTok0><span style='font-size:11.0pt'># remove classe from list</span></span></p>
-
-<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt'>#set
-testing set to have the same columns</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>testing &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>rawtestingset[ ,names]</span></span></p>
+<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>#set testing set to have the same columns</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>testing
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=NormalTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>rawtestingset[ ,names]</span></span></p>
 
 <p class=MsoNormal>The preprocessing produces a reduced data set having only 52
 columns that have the best chance of being meaningful predictors for the classe
@@ -526,536 +1365,675 @@ factor.</p>
 <h3><a name=data-partition></a>Data partition</h3>
 
 <p class=MsoNormal>The data was partitioned as follows the raw training set was
-split in two a training(75%) and validation(25%) subset<br>
-<span class=CommentTok0># create training and validation subset in original
-training set </span><span style='font-size:14.0pt'><br>
-</span><span class=NormalTok0>trainset &lt;-</span><span class=StringTok0> </span><span
-class=KeywordTok0>createDataPartition</span><span class=NormalTok0>(</span><span
-class=DataTypeTok0>y=</span><span class=NormalTok0>trainingdata$classe,</span><span
-class=DataTypeTok0>p=</span><span class=FloatTok0>0.75</span><span
-class=NormalTok0>, </span><span class=DataTypeTok0>list=</span><span
-class=OtherTok0>FALSE</span><span class=NormalTok0>)</span><span
-style='font-size:14.0pt'><br>
-</span><span class=NormalTok0>training &lt;-</span><span class=StringTok0> </span><span
-class=NormalTok0>trainingdata[trainset,]</span><span style='font-size:14.0pt'><br>
-</span><span class=NormalTok0>validate &lt;-</span><span class=StringTok0> </span><span
-class=NormalTok0>trainingdata[-trainset,]</span></p>
+split in two a training(75%) and validation(25%) subset</p>
 
-<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Calibri","sans-serif";
-color:#4F81BD'>Principal component analysis</span></b></p>
+<p class=SourceCode0><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>library</span></span><span class=NormalTok0><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(caret)</span></span><br>
+<span class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'># create
+traing and validation subset in original training set </span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>trainset
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>createDataPartition</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(</span></span><span class=DataTypeTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>y=</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>trainingdata$classe,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>p=</span></span><span
+class=FloatTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>0.75</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>, </span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>list=</span></span><span
+class=OtherTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FALSE</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>training
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=NormalTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>trainingdata[trainset,]</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>validate
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=NormalTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>trainingdata[-trainset,]</span></span></p>
 
-<p class=MsoNormal>A principal component analysis using Caret()shows that 80%
-of the observedvariation can be captured in 12 components.</p>
+<p class=MsoNormal>A principal component analysis using <span class=GramE><b
+style='mso-bidi-font-weight:normal'>Caret(</b></span><b style='mso-bidi-font-weight:
+normal'>)</b>shows that 80% of the observedvariation can be captured in 12
+components.</p>
 
-<p class=MsoNormal><span style='font-size:11.0pt'><br>
-</span><span class=CommentTok0><span style='font-size:11.0pt'>#Principal
-component analysis</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>preProc &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>preProcess</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(training,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;pca&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>thresh=</span></span><span
-class=FloatTok0><span style='font-size:11.0pt'>0.8</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>train.PCs &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(preProc,training)</span></span></p>
-
-<p class=MsoNormal><b><span style='font-size:14.0pt;font-family:"Calibri","sans-serif";
-color:#4F81BD'>Simple GLM model</span></b></p>
+<p class=MsoNormal><span class=CommentTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>#Principal component analysis</span></span><br>
+<span class=SpellE><span class=NormalTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>preProc</span></span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'> &lt;-</span></span><span class=StringTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'> </span></span><span class=GramE><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>preProcess</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(</span></span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>training,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>method=</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;pca&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>thresh=</span></span><span
+class=FloatTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>0.8</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>train.PCs
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>predict</span></span><span class=NormalTok0><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(preProc,training)</span></span></p>
 
 <p class=MsoNormal>As a 1st cut the PCA analysis was used to build a simple GLM
-regression model. Here a model is run on classe with principle components using
-<b>as.numeric()</b> to convert the classe factors to numbers, ie A:F becomes
-1:5 .Beacuse the predicted outcomes is a real number the result is rounded to
-generate the final class prediction</p>
+regression model. The model was run on as.numeric(classe) with principle
+components. To convert the classe factors to numbers, ie A:F becomes 1:5.
+Beacuse the predicted outcomes was a real number the result is rounded to
+generate the final class prediction, Details can be found in the *.<span
+class=SpellE>rmd</span> file <span class=GramE>its</span> not shown here for
+brevity)</p>
 
-<p class=SourceCode0><span class=NormalTok0><span style='font-size:11.0pt'>preProc
-&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>preProcess</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(training,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;pca&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>thresh=</span></span><span
-class=FloatTok0><span style='font-size:11.0pt'>0.8</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>train.PCs &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(preProc,training)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'># GLM model
-outcome=classe and principle components use as.numeric to convert </span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>modelFit1&lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>train</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>as.numeric</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(training$classe) ~.,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;glm&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>data=</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>train.PCs)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'># calculate principal
-component for validation data</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>validate.princ.comps
-&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(preProc,validate[,-</span></span><span
-class=DecValTok0><span style='font-size:11.0pt'>1</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>])</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'># used test data motel
-to predict validation data</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>validatepredictions&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(modelFit1,validate.princ.comps)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'>#..........note
-&quot;validatepredictions&quot; predictions are not integers </span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>validatepredictions&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>round</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(modelFit1,validate.princ.comps))</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'># compare results with
-confusion to get the accuracy</span></span><br>
-<span class=KeywordTok0><span style='font-size:11.0pt'>confusionMatrix</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>as.numeric</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(validate$classe),validatepredictions)</span></span></p>
-
-<p class=MsoNormal>&nbsp;</p>
-
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>## <b><u>Confusion
-Matrix and Statistics</u></b></span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          
-Reference</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prediction  
-1   2   3   4   5</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          1 200
-617 531  47   0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          2   3
-227 635  84   0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          3   0
-273 570  12   0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          4  
-0  84 503 215   2</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          5   8
-122 510 254   7</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Overall
-Statistics                                           </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##               
-<span style='background:yellow'>Accuracy : 0.2486</span>          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                 
-95% CI : (0.2365, 0.2609)</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     No
-Information Rate : 0.5606          </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     P-Value
-[Acc &gt; NIR] : 1               </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Statistics by
-Class:</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                     
-Class: 1 Class: 2 Class: 3 Class: 4 Class: 5</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Sensitivity           0.94787  0.17158   0.2073  0.35131 0.777778</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Specificity           0.74537  0.79838   0.8677  0.86277 0.817365</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Pos Pred
-Value        0.14337  0.23920   0.6667  0.26741 0.007769</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Neg Pred
-Value        0.99687  0.72288   0.4618  0.90317 0.999500</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Prevalence            0.04303  0.26978   0.5606  0.12480 0.001835</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Rate        0.04078  0.04629   0.1162  0.04384 0.001427</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Prevalence  0.28446  0.19352   0.1743  0.16395 0.183728</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Balanced
-Accuracy     0.84662  0.48498   0.5375  0.60704 0.797571</span></span></p>
-
-<p class=MsoNormal>The model has only ~<span style='background:yellow'>25%</span>
-accuracy each classe is ~1/5 of the data so we have a 20% chance of guessing
-right ie. this model is little better than chance.Its not clear why the PCA
-naalysis shows that 80 % o fthe varianceis captured by the 12 PC components but
-the model performs so badly, It is suspected to be the concersion of the class
-factor into a numeric variable.</p>
-
-<h3>Different ML algorithm models</h3>
+<p class=MsoNormal>This model had only 26% accuracy, each classe is ~1/5 of the
+data so we have a 20% chance of guessing right ie. this model is little better
+than chance.Its not clear why the PCA analysis shows that 80 % of the
+varianceis captured by the 12 PC components but the model performs so badly, It
+is suspected to be the concersion of the class factor into a numeric variable.</p>
 
 <p class=MsoNormal>Next a series of general ML alogrithms are tried to see
 which would perform best on the data A Recursive partitioning tree model A
 gradient boosting machine model with 50 trees A gradient boosting machine model
 with 100 trees A random forest model with 50 trees. Model code summarized below</p>
 
-<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt'>#Recursive
-partitioning tree model</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>modelFit2&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>train</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(classe ~.,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method =</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'> </span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;rpart&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>data =</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'> training)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'>#gradient boosting
-machine model</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>modelFit3 &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>train</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(classe ~.,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;gbm&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>data=</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>training,</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>                  </span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>verbose=</span></span><span
-class=OtherTok0><span style='font-size:11.0pt'>FALSE</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>tuneGrid =</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'> gbmcontrol)</span></span><br>
-<span class=CommentTok0><span style='font-size:11.0pt'>#Random forest model</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>modelFit4 &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>train</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(classe ~.,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>method=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;rf&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>                  </span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>data=</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>training,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>prox=</span></span><span
-class=OtherTok0><span style='font-size:11.0pt'>TRUE</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>ntree =</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'> </span></span><span
-class=DecValTok0><span style='font-size:11.0pt'>2</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)</span></span></p>
+<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>#Recursive partitioning tree model</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>modelFit2&lt;-</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>train</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(classe
+~.,</span></span><span class=DataTypeTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>method =</span></span><span class=NormalTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'> </span></span><span class=StringTok0><span
+style='font-size:11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>&quot;rpart&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>data =</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+training)</span></span><br>
+<br>
+<span class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#gradient
+boosting machine model</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>modelFit3
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>train</span></span><span class=NormalTok0><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(classe ~.,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>method=</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;gbm&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>data=</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>training,</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+style='mso-spacerun:yes'>                  </span></span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>verbose=</span></span><span
+class=OtherTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>FALSE</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>tuneGrid
+=</span></span><span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>
+gbmcontrol)</span></span><br>
+<br>
+<span class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#Random
+forest model</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>modelFit4
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>train</span></span><span class=NormalTok0><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(classe ~.,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>method=</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;rf&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+style='mso-spacerun:yes'>                  </span></span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>data=</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>training,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>prox=</span></span><span
+class=OtherTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>TRUE</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>ntree =</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'> </span></span><span
+class=DecValTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>2</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span></p>
 
 <h3><a name=the-recursive-partitioning-tree-model></a>The Recursive
 partitioning tree model</h3>
 
-<p class=MsoNormal>A schematic tree of this model is shown in the following
-plot. The results from the model are also plotted.It can be seen this model has
-~<b><span style='background:yellow'>50%</span> accuracy</b>.The confusion
-matrix is plotted for the training data and the validation data.</p>
-
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>## <b><u>Confusion
-Matrix and Statistics</u></b></span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          
-Reference</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prediction   
-A    B    C    D    E</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          A
-1271   19  104    0    1</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          B 
-407  316  226    0    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          C 
-414   25  416    0    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          D 
-374  139  291    0    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          E 
-138  114  217    0  432 </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Overall
-Statistics                                          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##               
-<span style='background:yellow'>Accuracy : 0.4965</span>          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                 
-95% CI : (0.4824, 0.5106)</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     No
-Information Rate : 0.531           </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     P-Value
-[Acc &gt; NIR] : 1               </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Statistics by
-Class:</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                     
-Class: A Class: B Class: C Class: D Class: E</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Sensitivity            0.4881  0.51550  0.33174       NA  0.99769</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Specificity            0.9461  0.85248  0.87973   0.8361  0.89510</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Pos Pred
-Value         0.9111  0.33298  0.48655       NA  0.47947</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Neg Pred
-Value         0.6201  0.92491  0.79304       NA  0.99975</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Prevalence             0.5310  0.12500  0.25571   0.0000  0.08830</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Rate         0.2592  0.06444  0.08483   0.0000  0.08809</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Prevalence   0.2845  0.19352  0.17435   0.1639  0.18373</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Balanced
-Accuracy      0.7171  0.68399  0.60573       NA  0.94640</span></span></p>
-
-<p class=MsoNormal>Clearly a partition style tree model is much better with an
-accuracy <b>~50%</b> The algorithm seems to struggle to identify classe “D” .To
+<p class=MsoNormal>Clearly a partition style tree model is much better(results
+below) with an accuracy <b style='mso-bidi-font-weight:normal'>~50%</b> .
+However the algorithm seems to struggle to identify classe &quot;D&quot; .To
 improve the predictions the next step is to look at aggregated type models
-.boosted tree models and random forests.</p>
+.boosted tree models and random forests<span class=GramE>..</span></p>
+
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>## <b style='mso-bidi-font-weight:normal'><u>Confusion Matrix and
+Statistics </u></b></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>           </span>Reference</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prediction<span style='mso-spacerun:yes'>    </span>A<span
+style='mso-spacerun:yes'>    </span>B<span style='mso-spacerun:yes'>   
+</span>C<span style='mso-spacerun:yes'>    </span>D<span
+style='mso-spacerun:yes'>    </span>E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>A 1260<span
+style='mso-spacerun:yes'>   </span>18<span style='mso-spacerun:yes'> 
+</span>114<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>3</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>B<span style='mso-spacerun:yes'> 
+</span>396<span style='mso-spacerun:yes'>  </span>320<span
+style='mso-spacerun:yes'>  </span>233<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>C<span style='mso-spacerun:yes'> 
+</span>392<span style='mso-spacerun:yes'>   </span>31<span
+style='mso-spacerun:yes'>  </span>432<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>D<span style='mso-spacerun:yes'> 
+</span>361<span style='mso-spacerun:yes'>  </span>150<span
+style='mso-spacerun:yes'>  </span>293<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>E<span style='mso-spacerun:yes'> 
+</span>139<span style='mso-spacerun:yes'>  </span>118<span
+style='mso-spacerun:yes'>  </span>260<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>  </span>384</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## </span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Overall Statistics<span
+style='mso-spacerun:yes'>                                           </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                </span>Accuracy : 0.4886<span
+style='mso-spacerun:yes'>          </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                  </span>95% CI : (0.4745, 0.5027)</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Statistics by Class:</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Sensitivity<span style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'>          </span>0.4945<span
+style='mso-spacerun:yes'>  </span>0.50235<span style='mso-spacerun:yes'> 
+</span>0.32432<span style='mso-spacerun:yes'>       </span>NA<span
+style='mso-spacerun:yes'>  </span>0.99225</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Specificity<span style='mso-spacerun:yes'>            </span>0.9427<span
+style='mso-spacerun:yes'>  </span>0.85259<span style='mso-spacerun:yes'> 
+</span>0.88158<span style='mso-spacerun:yes'>   </span>0.8361<span
+style='mso-spacerun:yes'>  </span>0.88554</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Pos
+Pred Value<span style='mso-spacerun:yes'>         </span>0.9032<span
+style='mso-spacerun:yes'>  </span>0.33720<span style='mso-spacerun:yes'> 
+</span>0.50526<span style='mso-spacerun:yes'>       </span>NA<span
+style='mso-spacerun:yes'>  </span>0.42619</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Neg
+Pred Value<span style='mso-spacerun:yes'>         </span>0.6329<span
+style='mso-spacerun:yes'>  </span>0.91985<span style='mso-spacerun:yes'> 
+</span>0.77772<span style='mso-spacerun:yes'>       </span>NA<span
+style='mso-spacerun:yes'>  </span>0.99925</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prevalence<span style='mso-spacerun:yes'>             </span>0.5196<span
+style='mso-spacerun:yes'>  </span>0.12989<span style='mso-spacerun:yes'> 
+</span>0.27162<span style='mso-spacerun:yes'>   </span>0.0000<span
+style='mso-spacerun:yes'>  </span>0.07892</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Rate<span style='mso-spacerun:yes'>         </span>0.2569<span
+style='mso-spacerun:yes'>  </span>0.06525<span style='mso-spacerun:yes'> 
+</span>0.08809<span style='mso-spacerun:yes'>   </span>0.0000<span
+style='mso-spacerun:yes'>  </span>0.07830</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Prevalence<span style='mso-spacerun:yes'>   </span>0.2845<span
+style='mso-spacerun:yes'>  </span>0.19352<span style='mso-spacerun:yes'> 
+</span>0.17435<span style='mso-spacerun:yes'>   </span>0.1639<span
+style='mso-spacerun:yes'>  </span>0.18373</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Balanced Accuracy<span style='mso-spacerun:yes'>      </span>0.7186<span
+style='mso-spacerun:yes'>  </span>0.67747<span style='mso-spacerun:yes'> 
+</span>0.60295<span style='mso-spacerun:yes'>       </span>NA<span
+style='mso-spacerun:yes'>  </span>0.93890</span></span></p>
 
 <h4><a name=the-gradient-boosting-machine-model-with></a>The gradient boosting
 machine model with 50 trees</h4>
 
-<p class=MsoNormal>Here a gradient boosted model is run on the same data. The
-results are shown below .his model has an impressive <b><span style='background:
-yellow'>93%</span></b> accuracy.The confusion matrix is plotted for the
-training data and the validation data.</p>
+<p class=MsoNormal>The Next step was to look at aggregated type models; Boosted
+tree models and random forests. Here a gradient boosted model is run on the
+same data. The results (below<span class=GramE>)shown</span> this model has an
+impressive <b style='mso-bidi-font-weight:normal'>93%</b> accuracy.The
+confusion matrix is plotted for the training data and the validation data.</p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>## <b><u>Confusion
-Matrix and Statistics</u></b></span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          
-Reference</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prediction   
-A    B    C    D    E</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          A
-1351   26    8    8    2</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          B  
-81  814   39   11    4</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          C   
-0   41  799   13    2</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          D   
-4    9   45  738    8</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          E   
-4   24   20   18  835</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Overall
-Statistics                                         </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##               
-<span style='background:yellow'>Accuracy : 0.9252</span>          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                 
-95% CI : (0.9174, 0.9324)</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     No
-Information Rate : 0.2936          </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     P-Value
-[Acc &gt; NIR] : &lt; 2.2e-16       </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Statistics by
-Class:</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                     
-Class: A Class: B Class: C Class: D Class: E</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Sensitivity           
-0.9382   0.8906   0.8771   0.9365   0.9812</span></span><span style='font-size:
-10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Specificity            0.9873   0.9662   0.9860   0.9840   0.9837</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Pos Pred
-Value         0.9685   0.8577   0.9345   0.9179   0.9267</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Neg Pred
-Value         0.9746   0.9747   0.9723   0.9878   0.9960</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Prevalence             0.2936   0.1864   0.1858   0.1607   0.1735</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Rate         0.2755   0.1660   0.1629   0.1505   0.1703</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Prevalence   0.2845   0.1935   0.1743   0.1639   0.1837</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Balanced
-Accuracy      0.9627   0.9284   0.9315   0.9603   0.9825</span></span></p>
+<p class=MsoNormal>The model was rerun with n.trees=100 trees. The prediction
+accuracy increaced to <b style='mso-bidi-font-weight:normal'>96% accuracy</b>.</p>
 
-<p class=MsoNormal>The model is rerun with n.trees=100 trees. An the results
-shown below now the prediction accuracy has increaced to <b><span
-style='background:yellow'>96%</span> accuracy</b>.The confusion matrix is
-plotted for the training data and the validation data.</p>
-
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>## <b><u>Confusion
-Matrix and Statistics</u></b></span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          
-Reference</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prediction   
-A    B    C    D    E</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          A
-1381   10    1    1    2</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          B  
-39  882   22    3    3</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          C   
-0   26  819    9    1</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          D   
-0    4   27  760   13</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          E    0   
-9    8   16  868</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Overall
-Statistics                                          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##               
-<span style='background:yellow'>Accuracy : 0.9604</span>          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                 
-95% CI : (0.9546, 0.9657)</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     No
-Information Rate : 0.2896          </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     P-Value
-[Acc &gt; NIR] : &lt; 2.2e-16       </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Statistics by
-Class:</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                     
-Class: A Class: B Class: C Class: D Class: E</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Sensitivity            0.9725   0.9474   0.9339   0.9632   0.9786</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Specificity            0.9960   0.9831   0.9911   0.9893   0.9918</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Pos Pred
-Value         0.9900   0.9294   0.9579   0.9453   0.9634</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Neg Pred
-Value         0.9889   0.9876   0.9857   0.9929   0.9953</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Prevalence             0.2896   0.1898   0.1788   0.1609   0.1809</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Rate         0.2816   0.1799   0.1670   0.1550   0.1770</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Prevalence   0.2845   0.1935   0.1743   0.1639   0.1837</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Balanced
-Accuracy      0.9843   0.9653   0.9625   0.9763   0.9852</span></span></p>
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>## <b style='mso-bidi-font-weight:normal'><u>Confusion Matrix and
+Statistics</u></b></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>  </span><span
+style='mso-spacerun:yes'>         </span>Reference</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prediction<span style='mso-spacerun:yes'>    </span>A<span
+style='mso-spacerun:yes'>    </span>B<span style='mso-spacerun:yes'>   
+</span>C<span style='mso-spacerun:yes'>    </span>D<span
+style='mso-spacerun:yes'>    </span>E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>A 1371<span
+style='mso-spacerun:yes'>   </span>18<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>    </span>2<span
+style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>B<span style='mso-spacerun:yes'>  
+</span>26<span style='mso-spacerun:yes'>  </span>896<span
+style='mso-spacerun:yes'>   </span>24<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>3</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>C<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>   </span>31<span
+style='mso-spacerun:yes'>  </span>813<span style='mso-spacerun:yes'>  
+</span>10<span style='mso-spacerun:yes'>    </span>1</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>D<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>3<span
+style='mso-spacerun:yes'>   </span>25<span style='mso-spacerun:yes'> 
+</span>772<span style='mso-spacerun:yes'>    </span>4</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>E<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>   </span>11<span
+style='mso-spacerun:yes'>    </span>8<span style='mso-spacerun:yes'>  
+</span>11<span style='mso-spacerun:yes'>  </span>871</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## </span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Overall Statistics<span
+style='mso-spacerun:yes'>                                           </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                </span>Accuracy : 0.9631<span
+style='mso-spacerun:yes'>          </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                  </span>95% CI : (0.9574, 0.9682)</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## </span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Statistics by Class:</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Sensitivity<span style='mso-spacerun:yes'>            </span>0.9814<span
+style='mso-spacerun:yes'>   </span>0.9343<span style='mso-spacerun:yes'>  
+</span>0.9302<span style='mso-spacerun:yes'>   </span>0.9711<span
+style='mso-spacerun:yes'>   </span>0.9909</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Specificity<span style='mso-spacerun:yes'>            </span>0.9932<span
+style='mso-spacerun:yes'>   </span>0.9866<span style='mso-spacerun:yes'>  
+</span>0.9896<span style='mso-spacerun:yes'>   </span>0.9922<span
+style='mso-spacerun:yes'>   </span>0.9925</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Pos
+Pred Value<span style='mso-spacerun:yes'>         </span>0.9828<span
+style='mso-spacerun:yes'>   </span>0.9442<span style='mso-spacerun:yes'>  
+</span>0.9509<span style='mso-spacerun:yes'>   </span>0.9602<span
+style='mso-spacerun:yes'>   </span>0.9667</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Neg
+Pred Value<span style='mso-spacerun:yes'>         </span>0.9926<span
+style='mso-spacerun:yes'>   </span>0.9841<span style='mso-spacerun:yes'>  
+</span>0.9849<span style='mso-spacerun:yes'>   </span>0.9944<span
+style='mso-spacerun:yes'>   </span>0.9980</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prevalence<span style='mso-spacerun:yes'>             </span>0.2849<span
+style='mso-spacerun:yes'>   </span>0.1956<span style='mso-spacerun:yes'>  
+</span>0.1782<span style='mso-spacerun:yes'>   </span>0.1621<span
+style='mso-spacerun:yes'>   </span>0.1792</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Rate<span style='mso-spacerun:yes'>         </span>0.2796<span
+style='mso-spacerun:yes'>   </span>0.1827<span style='mso-spacerun:yes'>  
+</span>0.1658<span style='mso-spacerun:yes'>   </span>0.1574<span
+style='mso-spacerun:yes'>   </span>0.1776</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Prevalence<span style='mso-spacerun:yes'>   </span>0.2845<span
+style='mso-spacerun:yes'>   </span>0.1935<span style='mso-spacerun:yes'>  
+</span>0.1743<span style='mso-spacerun:yes'>   </span>0.1639<span
+style='mso-spacerun:yes'>   </span>0.1837</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Balanced Accuracy<span style='mso-spacerun:yes'>      </span>0.9873<span
+style='mso-spacerun:yes'>   </span>0.9604<span style='mso-spacerun:yes'>  
+</span>0.9599<span style='mso-spacerun:yes'>   </span>0.9816<span
+style='mso-spacerun:yes'>   </span>0.9917</span></span></p>
 
 <h4><a name=random-forest-model></a>Random Forest model</h4>
 
 <p class=MsoNormal>The last model looked at was a random forest model. the
-results are shown below this model gas has~ <b><span style='background:yellow'>99%</span>
-accuracy</b>. The confusion matrix is plotted for the training data and the
-validation data.</p>
+results are shown below this model gas has~ <b style='mso-bidi-font-weight:
+normal'>99% accuracy</b>. The confusion matrix is plotted for the training data
+and the validation data.</p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:9.0pt'>##<b>
-<u>Confusion Matrix and Statistics</u></b></span></span><span style='font-size:
-10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          
-Reference</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prediction   
-A    B    C    D    E</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          A
-1391    4    0    0    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          B   
-7  937    4    1    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          C   
-0    2  853    0    0</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          D   
-1    0    5  797    1</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##          E   
-0    0    2    3  896</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Overall
-Statistics                                          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##               
-<span style='background:yellow'>Accuracy : 0.9939</span>          </span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                 
-95% CI : (0.9913, 0.9959)</span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     No
-Information Rate : 0.2853          </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##     P-Value
-[Acc &gt; NIR] : &lt; 2.2e-16       </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Statistics by
-Class: </span></span><span style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##                     
-Class: A Class: B Class: C Class: D Class: E</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Sensitivity            0.9943   0.9936   0.9873   0.9950   0.9989</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>##
-Specificity            0.9989   0.9970   0.9995   0.9983   0.9988</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Pos Pred
-Value         0.9971   0.9874   0.9977   0.9913   0.9945</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Neg Pred
-Value         0.9977   0.9985   0.9973   0.9990   0.9998</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Prevalence            
-0.2853   0.1923   0.1762   0.1633   0.1829</span></span><span style='font-size:
-10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Rate         0.2836   0.1911   0.1739   0.1625   0.1827</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Detection
-Prevalence   0.2845   0.1935   0.1743   0.1639   0.1837</span></span><span
-style='font-size:10.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:9.0pt'>## Balanced
-Accuracy      0.9966   0.9953   0.9934   0.9967   0.9988</span></span></p>
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>## <b style='mso-bidi-font-weight:normal'><u>Confusion Matrix and
+Statistics</u></b></span></span><b style='mso-bidi-font-weight:normal'><u><br>
+</u></b><span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:
+12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>           </span>Reference</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prediction<span style='mso-spacerun:yes'>    </span>A<span
+style='mso-spacerun:yes'>    </span>B<span style='mso-spacerun:yes'>   
+</span>C<span style='mso-spacerun:yes'>    </span>D<span
+style='mso-spacerun:yes'>   </span><span style='mso-spacerun:yes'> </span>E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>A 1392<span
+style='mso-spacerun:yes'>    </span>2<span style='mso-spacerun:yes'>   
+</span>1<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>B<span style='mso-spacerun:yes'>   
+</span>8<span style='mso-spacerun:yes'>  </span>939<span
+style='mso-spacerun:yes'>    </span>2<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>C<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>8<span
+style='mso-spacerun:yes'>  </span>844<span style='mso-spacerun:yes'>   
+</span>3<span style='mso-spacerun:yes'>    </span>0</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>D<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>9<span style='mso-spacerun:yes'> 
+</span>793<span style='mso-spacerun:yes'>    </span>2</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>          </span>E<span style='mso-spacerun:yes'>   
+</span>0<span style='mso-spacerun:yes'>    </span>0<span
+style='mso-spacerun:yes'>    </span>1<span style='mso-spacerun:yes'>   
+</span>4<span style='mso-spacerun:yes'>  </span>896</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## </span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Overall Statistics<span style='mso-spacerun:yes'>                            
+</span><span style='mso-spacerun:yes'>             </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                </span>Accuracy : 0.9918<span
+style='mso-spacerun:yes'>          </span></span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                  </span>95% CI : (0.9889, 0.9942)</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Statistics by Class:</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##<span
+style='mso-spacerun:yes'>                      </span>Class: A Class: B Class:
+C Class: D Class: E</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Sensitivity<span style='mso-spacerun:yes'>            </span>0.9943<span
+style='mso-spacerun:yes'>   </span>0.9895<span style='mso-spacerun:yes'>  
+</span>0.9848<span style='mso-spacerun:yes'>   </span>0.9912<span
+style='mso-spacerun:yes'>   </span>0.9978</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Specificity<span
+style='mso-spacerun:yes'>            </span>0.9991<span
+style='mso-spacerun:yes'>   </span>0.9975<span style='mso-spacerun:yes'>  
+</span>0.9973<span style='mso-spacerun:yes'>   </span>0.9973<span
+style='mso-spacerun:yes'>   </span>0.9988</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Pos
+Pred Value<span style='mso-spacerun:yes'>         </span>0.9978<span
+style='mso-spacerun:yes'>   </span>0.9895<span style='mso-spacerun:yes'>  
+</span>0.9871<span style='mso-spacerun:yes'>   </span>0.9863<span
+style='mso-spacerun:yes'>   </span>0.9945</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## Neg
+Pred Value<span style='mso-spacerun:yes'>         </span>0.9977<span
+style='mso-spacerun:yes'>   </span>0.9975<span style='mso-spacerun:yes'>  
+</span>0.9968<span style='mso-spacerun:yes'>   </span>0.9983<span
+style='mso-spacerun:yes'>   </span>0.9995</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Prevalence<span style='mso-spacerun:yes'>             </span>0.2855<span
+style='mso-spacerun:yes'>   </span>0.1935<span style='mso-spacerun:yes'>  
+</span>0.1748<span style='mso-spacerun:yes'>   </span>0.1631<span
+style='mso-spacerun:yes'>   </span>0.1831</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Rate<span style='mso-spacerun:yes'>         </span>0.2838<span
+style='mso-spacerun:yes'>   </span>0.1915<span style='mso-spacerun:yes'>  
+</span>0.1721<span style='mso-spacerun:yes'>   </span>0.1617<span
+style='mso-spacerun:yes'>   </span>0.1827</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Detection Prevalence<span style='mso-spacerun:yes'>   </span>0.2845<span
+style='mso-spacerun:yes'>   </span>0.1935<span style='mso-spacerun:yes'>  
+</span>0.1743<span style='mso-spacerun:yes'>   </span>0.1639<span
+style='mso-spacerun:yes'>   </span>0.1837</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>##
+Balanced Accuracy<span style='mso-spacerun:yes'>      </span>0.9967<span
+style='mso-spacerun:yes'>   </span>0.9935<span style='mso-spacerun:yes'>  
+</span>0.9911<span style='mso-spacerun:yes'>   </span>0.9943<span
+style='mso-spacerun:yes'>   </span>0.9983</span></span></p>
 
-<p class=MsoNormal>To conclude the best model is the Random forest model here
+<p class=MsoNormal>To conclude the best model is the Random forest model.Below
 that model is used to predict the testing data set.</p>
 
-<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt'>#Using
-model 4....random forest n=50 trees</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>testingpredictions &lt;-</span></span><span
-class=StringTok0><span style='font-size:11.0pt'> </span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>predict</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(modelFit4,</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>newdata=</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>testing)</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>results&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>c</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(</span></span><span
-class=DecValTok0><span style='font-size:11.0pt'>1</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>:</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>length</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(testingpredictions))</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>  for (i in </span></span><span
-class=DecValTok0><span style='font-size:11.0pt'>1</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>:</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>length</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(testingpredictions)){</span></span><span
-class=CommentTok0><span style='font-size:11.0pt'>#loop through all columns </span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>    results[i]&lt;-</span></span><span
-class=KeywordTok0><span style='font-size:11.0pt'>paste</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>(i,</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;=&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>,testingpredictions[i],</span></span><span
-class=DataTypeTok0><span style='font-size:11.0pt'>sep=</span></span><span
-class=StringTok0><span style='font-size:11.0pt'>&quot;&quot;</span></span><span
-class=NormalTok0><span style='font-size:11.0pt'>)  }</span></span><br>
-<span class=NormalTok0><span style='font-size:11.0pt'>results</span></span></p>
+<p class=SourceCode0><span class=CommentTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>#Using model 4....random forest n=50 trees</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>testingpredictions
+&lt;-</span></span><span class=StringTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'> </span></span><span class=KeywordTok0><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>predict</span></span><span class=NormalTok0><span style='font-size:
+11.0pt;mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi'>(modelFit4,</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>newdata=</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>testing)</span></span><br>
+<br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>results&lt;-</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>c</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(</span></span><span
+class=DecValTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>1</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>:</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>length</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(testingpredictions))</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+style='mso-spacerun:yes'>  </span>for (i in </span></span><span
+class=DecValTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>1</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>:</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>length</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(testingpredictions)){</span></span><span
+class=CommentTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>#loop
+through all columns </span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+style='mso-spacerun:yes'>    </span>results[i]&lt;-</span></span><span
+class=KeywordTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>paste</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>(i,</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;=&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>,testingpredictions[i],</span></span><span
+class=DataTypeTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>sep=</span></span><span
+class=StringTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>&quot;&quot;</span></span><span
+class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>)</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'><span
+style='mso-spacerun:yes'>  </span>}</span></span><br>
+<span class=NormalTok0><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>results</span></span></p>
 
-<p class=SourceCode0><span class=VerbatimChar><span style='font-size:10.0pt'>## 
-[1] &quot;1=B&quot;  &quot;2=A&quot;  &quot;3=B&quot;  &quot;4=A&quot; 
-&quot;5=A&quot;  &quot;6=E&quot;  &quot;7=D&quot;  &quot;8=B&quot; 
-&quot;9=A&quot;  &quot;10=A&quot;</span></span><span style='font-size:11.0pt'><br>
-</span><span class=VerbatimChar><span style='font-size:10.0pt'>## [11]
-&quot;11=B&quot; &quot;12=C&quot; &quot;13=B&quot; &quot;14=A&quot;
-&quot;15=E&quot; &quot;16=E&quot; &quot;17=A&quot; &quot;18=B&quot;
-&quot;19=B&quot; &quot;20=B&quot;</span></span></p>
+<p class=SourceCode0><span class=VerbatimChar><span style='font-size:11.0pt;
+mso-bidi-font-size:12.0pt;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+minor-bidi'>##<span style='mso-spacerun:yes'>  </span>[1] &quot;1=B&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;2=A&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;3=B&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;4=A&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;5=A&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;6=E&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;7=D&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;8=B&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;9=A&quot;<span
+style='mso-spacerun:yes'>  </span>&quot;10=A&quot;</span></span><br>
+<span class=VerbatimChar><span style='font-size:11.0pt;mso-bidi-font-size:12.0pt;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>## [11]
+&quot;11=B&quot; &quot;12=C&quot; &quot;13=B&quot; &quot;14=A&quot; &quot;15=E&quot;
+&quot;16=E&quot; &quot;17=A&quot; &quot;18=B&quot; &quot;19=B&quot;
+&quot;20=B&quot;</span></span></p>
 
 </div>
 

@@ -23,13 +23,15 @@ rawtestingset <- read.csv('pml-testing.csv')
 ```
 
 ###Preprocessing
-Upon examination there are 159 variables in the dataset (see below). However many of these columns lack significant data or contain factordata that is notrelated to the sensor data. In particular columns 1:7 (Grey highlight) contain factor data, It is decided to exclude this for this first analyses whist it may effect the quality of the data, for example the "user" factor identifying the participant who carries out the exercize, one would expect each user to have a unique way of exercizing and this can contaminate signals from the acellerometers However it is reasonable to assumed this is a secondary effect since all the exercizes werecarried outunderthe supervision os a weight training expert. 
+Upon examination there are 159 variables in the dataset (see below). However many of these columns lack significant data or contain factordata that is notrelated to the sensor data. In particular columns 1:7 (below) contain factor data not related to the acelleromeners, It is decided to exclude this for this first analyses whist it may effect the quality of the data, for example the "user" factor identifying the participant who carries out the exercize, one would expect each user to have a unique way of exercizing and this can contaminate signals from the acellerometers However it is reasonable to assumed this is a secondary effect since all the exercizes werecarried outunderthe supervision os a weight training expert. 
 
-Put raw data SUMMARY table here
+```{r,echo=FALSE,results=TRUE,eval=TRUE,cache=TRUE}
+names(rawtrainingset[,1:7])
+```
 
-The preprocessing of the data was carried out using the **preprocessing()** script For brevity it is not diaplayed here but can be in this directory. To summarise the source function it removes the 1st 7 columns (non acellerometer data) and loops through all the other acellerometer columns to see if they contains more that 70% numeric content if the column has less numeric content than this it is discarded.
+The preprocessing of the data was carried out using the **preprocessing()** script For brevity it is not displayed here but can be found in this directory. To summarise the source function it removes the 1st 7 columns (non acellerometer data) and loops through all the other acellerometer columns to see if they contains more that 70% numeric content if the column has less numeric content than this it is discarded.
 
-```{r,echo=TRUE,results=TRUE,eval=TRUE,cache=TRUE}
+```{r,echo=TRUE,results=FALSE,eval=TRUE,cache=TRUE}
 #===Load script to preprocess raw data
 source("preprocessdat.R")
 
@@ -64,12 +66,10 @@ library(caret)
 #Principal component analysis
 preProc <- preProcess(training,method="pca",thresh=0.8)
 train.PCs <- predict(preProc,training)
-head(train.PCs,3)
 ```
 
-As a 1st cut the PCA analysis was used to build a simple GLM regression model. Here a model is run on classe with principle components using **as.numeric()** to convert the classe factors to numbers, ie A:F becomes 1:5 .Beacuse the predicted outcomes is a real number the result is rounded to generate the final class prediction
-
-```{r,echo=TRUE,eval=TRUE,results=TRUE,cache=TRUE}
+As a 1st cut the PCA analysis was used to build a simple GLM regression model. The model was run on as.numeric(classe) with principle components. To convert the classe factors to numbers, ie A:F becomes 1:5. Beacuse the predicted outcomes was a real number the result is rounded to generate the final class prediction
+```{r,echo=FALSE,eval=TRUE,results=FALSE,cache=TRUE}
 preProc <- preProcess(training,method="pca",thresh=0.8)
 train.PCs <- predict(preProc,training)
 # GLM model outcome=classe and principle components use as.numeric to convert 
@@ -87,9 +87,7 @@ validatepredictions<-round(predict(modelFit1,validate.princ.comps))
 # compare results with confusion to get the accuracy
 confusionMatrix(as.numeric(validate$classe),validatepredictions)
 ```
-
-
-The model has only 26% accuracy each classe is ~1/5 of the data so we have a 20% chance of guessing right ie. this model is little better than chance.Its not clear why the PCA naalysis shows that 80 % o fthe varianceis captured by the 12 PC components but the model performs so badly, It is suspected to be the concersion of the class factor into a numeric variable.
+This model had only 26% accuracy, each classe is ~1/5 of the data so we have a 20% chance of guessing right ie. this model is little better than chance.Its not clear why the PCA analysis shows that 80 % of the varianceis captured by the 12 PC components but the model performs so badly, It is suspected to be the concersion of the class factor into a numeric variable.
 
 Next a series of general ML alogrithms are tried to see which would perform best on the data 
   A Recursive partitioning tree model
@@ -113,8 +111,7 @@ modelFit4 <- train(classe ~.,method="rf",
 
 
 ###The  Recursive partitioning tree model
-Clearly a partition style tree model is much better with an accuracy **~50%** The algorithm seems to struggle to identify classe "D" .To improve the predictions the next step is to look at aggregated type models .boosted tree models and random forests.. 
-
+Clearly a partition style tree model is much better(results below) with an accuracy **~50%** . However the algorithm seems to struggle to identify classe "D" .To improve the predictions the next step is to look at aggregated type models .boosted tree models and random forests.. 
 ```{r,echo=FALSE,eval=TRUE,results=TRUE,cache=TRUE}
 #A Recursive partitioning tree model
 library(caret)
@@ -125,9 +122,6 @@ modelFit2<-train(classe ~.,method = "rpart",data = training)
   
 #predictions for validation data
 validatepredictions <- predict(modelFit2,newdata=validate[,-1])
-#plot tree
-rpart.plot(modelFit2$finalModel)
-"Recursive tree model diagram"
 
 # compare actual validation data compared to model prediction
 "Recursive partitioning tree model results"
@@ -135,14 +129,8 @@ confusionMatrix(validate$classe,validatepredictions)
 
 ```
 
-
-Clearly a partition style tree model does much better on this data **~50%** accuracy to improve the predictions the next step is to look at aggregated type models .boosted tree models and random forests.
-
-
 ####The gradient boosting machine model with 50 trees
-
-HEre a gradient boosted model is run on the same data. The results are shown below  .his model has an impressive **93%** accuracy.The confusion matrix is plotted for the training data and the validation data.
-
+The Next step was to look at aggregated type models; Boosted tree models and random forests. Here a gradient boosted model is run on the same data. The results (below)shown this model has an impressive **93%** accuracy.The confusion matrix is plotted for the training data and the validation data.
 
 ```{r,echo=FALSE,eval=TRUE,results=TRUE,cache=TRUE}
 #gradient boosting machine model with 50 trees
@@ -162,9 +150,9 @@ confusionMatrix(validate$classe,validatepredictions)
 
 ```
 
-The model is rerun with n.trees=100 trees. An the results shown below now the prediction accuracy has increaced to **96% accuracy**.The confusion matrix is plotted for the training data and the validation data.
+The model was rerun with n.trees=100 trees. The prediction accuracy increaced to **96% accuracy**.
 
-```{r,echo=FALSE,eval=TRUE,results=TRUE,cache=TRUE}
+```{r,echo=FALSE,eval=TRUE,results=FALSE,cache=TRUE}
 #gradient boosting machine model with 100 trees
 gbmcontrol <-  expand.grid(interaction.depth = c(1, 2, 4),
                            n.trees = 100,
@@ -198,8 +186,7 @@ confusionMatrix(validate$classe,validatepredictions)
 
 ```
 
-To conclude the best model is the Random forest model here that model is used to predict the testing data set.
-
+To conclude the best model is the Random forest model.Below that model is used to predict the testing data set.
 ```{r,echo=TRUE,eval=TRUE,results=TRUE,cache=TRUE}
 
 #Using model 4....random forest n=50 trees
